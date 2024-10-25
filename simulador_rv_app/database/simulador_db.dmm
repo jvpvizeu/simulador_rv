@@ -1,0 +1,1422 @@
+{
+	"tables": {
+		"69c3d642-2d77-4ae6-842b-eabd32f43318": {
+			"id": "69c3d642-2d77-4ae6-842b-eabd32f43318",
+			"visible": true,
+			"name": "exams",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "9bced3b1-86f9-4846-a417-59442613e3ef",
+					"name": "id_exam",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "248f69ee-303b-4074-87cc-f9502af37138",
+					"name": "id_user",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "5ceddb14-9049-415a-9b66-451709e39d56",
+					"name": "dt_creationdate",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"d187dec8-730f-4455-a181-4422639fda47",
+				"afb211c9-2124-4c5f-9928-873b8ed81b2f",
+				"f390cc96-141a-4adc-8452-0a38f672b6a6"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "d9e31dcf-d1f3-4ebd-9886-a06b4be1caba",
+					"name": "exams_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "3ecd2e9c-189c-46ca-9429-3738f285a872",
+							"colid": "9bced3b1-86f9-4846-a417-59442613e3ef"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"0910d977-99a6-4b9e-9ef0-6724dd3a7158": {
+			"id": "0910d977-99a6-4b9e-9ef0-6724dd3a7158",
+			"visible": true,
+			"name": "users",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "b4e8fae1-afce-4ffe-b63b-16e793dde0d1",
+					"name": "id_user",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "c02c2815-9fc5-4120-860e-389df794946f",
+					"name": "nm_name",
+					"datatype": "name",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ae74c2a2-40e9-4ecf-bf60-fdfed1f7afd9",
+					"name": "vc_email",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7987c664-fe24-48e3-88ad-29bc2b500764",
+					"name": "vc_password",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"d187dec8-730f-4455-a181-4422639fda47",
+				"9dc0df0d-c6c2-4046-a25e-fcaadfbd72c6"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "1696ce79-78dc-46ff-bf1e-a38e544b9cb3",
+					"name": "users_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "a91e8eb3-2394-4739-92fd-78ad7fe8cb9d",
+							"colid": "b4e8fae1-afce-4ffe-b63b-16e793dde0d1"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"b9b7a821-7f30-49b5-8294-d1ce7e1dd730": {
+			"id": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+			"visible": true,
+			"name": "questions",
+			"desc": "questoes de cada simulado",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "47dfb026-d702-4859-a419-b71b316c212d",
+					"name": "id_question",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0981452e-de50-4df2-bbfc-269c7202f3ed",
+					"name": "id_correctoption",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "81015693-824a-4a5c-a648-7f28eb09ea21",
+					"name": "tx_content",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "texto da pergunta",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"4d62baaa-c12f-4341-95d1-010c3dc372d6",
+				"73a9fdbf-4a6f-44e7-a849-94d8010e42c4",
+				"41194fd4-b04f-4e46-900e-86d9bf29b0e7",
+				"e2032f73-159c-4558-b5d5-655be4af9743"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "03bd8348-d2e3-426c-a052-e4bb93891666",
+					"name": "questions_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "f316163e-c73e-47d0-b865-359d4772aafc",
+							"colid": "47dfb026-d702-4859-a419-b71b316c212d"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"ff3510a1-ac80-4092-bc25-71c9d4f55241": {
+			"id": "ff3510a1-ac80-4092-bc25-71c9d4f55241",
+			"visible": true,
+			"name": "options",
+			"desc": "alternativas de cada pergunta (a, b, c ...)",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "8f155644-fff7-4be1-8b60-97dce5957f7a",
+					"name": "id_option",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ec0b289b-dd0f-4259-90f0-b0b71fb6dac9",
+					"name": "id_question",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "0e0122a3-9cf0-4110-b0ae-aa4029620dd1",
+					"name": "tx_content",
+					"datatype": "text",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "texto da alternativa",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"4d62baaa-c12f-4341-95d1-010c3dc372d6",
+				"0c230561-9d41-4007-8e8a-abd39d6dda44"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b73a9627-63c3-4c2f-b263-e8ef3938c628",
+					"name": "options_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "c18cc8dc-0641-4a8b-821b-ce2a132f14c9",
+							"colid": "8f155644-fff7-4be1-8b60-97dce5957f7a"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"1b4ba878-48ad-4476-8872-f910acb0cd3d": {
+			"id": "1b4ba878-48ad-4476-8872-f910acb0cd3d",
+			"visible": true,
+			"name": "exams_questions",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "9baf91cd-478d-4410-9ae3-16be352d3d4c",
+					"name": "id_exam_question",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "187a84c4-989a-43f8-b7e0-d5b7e996f30b",
+					"name": "id_exam",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "05f17f7b-451f-44bc-a1fb-a9714b7d2197",
+					"name": "id_quesion",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"afb211c9-2124-4c5f-9928-873b8ed81b2f",
+				"73a9fdbf-4a6f-44e7-a849-94d8010e42c4"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "e8c2a407-0371-4cc9-a5f8-0ff96acf725d",
+					"name": "exams_questions_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "9e51111a-591b-47ba-a021-0e64eb5689cc",
+							"colid": "9baf91cd-478d-4410-9ae3-16be352d3d4c"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"d9df2c97-9e58-471d-a87d-89b059682ea7": {
+			"id": "d9df2c97-9e58-471d-a87d-89b059682ea7",
+			"visible": true,
+			"name": "categories",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "84d2e224-98ef-4155-a668-25ef79711f65",
+					"name": "id_category",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "df4c22b6-4e96-4369-af40-cadc9e8a9ea1",
+					"name": "nm_name",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"04ed3299-de9b-4aa4-bb38-3221c8148645"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "ab561f10-7240-4675-bd28-bfccee964fc1",
+					"name": "categories_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "8e84ceb4-ff0d-4690-a078-04a0de19bc1c",
+							"colid": "84d2e224-98ef-4155-a668-25ef79711f65"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"a54cfb03-07be-4bfb-8891-d75a5483ff7a": {
+			"id": "a54cfb03-07be-4bfb-8891-d75a5483ff7a",
+			"visible": true,
+			"name": "question_categories",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "2f30ad8c-d506-446a-bbf4-9e7149a56407",
+					"name": "id_question_categories",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8dc053d2-289b-47dc-b8a9-a95fae057d1b",
+					"name": "id_question",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "c23d89ff-1e1f-49a3-aa24-2e971657ab00",
+					"name": "id_category",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"04ed3299-de9b-4aa4-bb38-3221c8148645",
+				"41194fd4-b04f-4e46-900e-86d9bf29b0e7"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "8a882b4f-d481-41c8-8495-b6423ab9b9e9",
+					"name": "question_categories_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "33158b4c-20c4-441c-a0cd-79ebf0e1a943",
+							"colid": "2f30ad8c-d506-446a-bbf4-9e7149a56407"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"d5cde2bd-f4fb-421a-be71-e254168d4666": {
+			"id": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+			"visible": true,
+			"name": "user_answers",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "7c268056-21ad-44a4-bbfa-32fe84b0875b",
+					"name": "id_useranswers",
+					"datatype": "serial",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "e8f276cf-5c50-44a8-99cb-0aace75fcf81",
+					"name": "id_exam",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "2c90bafd-6b90-4934-896f-d4705e68e88e",
+					"name": "id_user",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "f1d01ec8-a44f-4b1f-8e13-5235335ca4b1",
+					"name": "id_question",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "02de1f80-d591-4474-9069-0eb03ccdc8cc",
+					"name": "id_selectedoption",
+					"datatype": "serial",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"9dc0df0d-c6c2-4046-a25e-fcaadfbd72c6",
+				"f390cc96-141a-4adc-8452-0a38f672b6a6",
+				"0c230561-9d41-4007-8e8a-abd39d6dda44",
+				"e2032f73-159c-4558-b5d5-655be4af9743"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "aedad442-dbc4-4e2c-979f-cb55d33c9e6f",
+					"name": "user_answers_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "8677becc-6772-4434-b7c3-673a5dbfbdf2",
+							"colid": "7c268056-21ad-44a4-bbfa-32fe84b0875b"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		}
+	},
+	"relations": {
+		"d187dec8-730f-4455-a181-4422639fda47": {
+			"id": "d187dec8-730f-4455-a181-4422639fda47",
+			"visible": true,
+			"name": "exams_id_user_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "1696ce79-78dc-46ff-bf1e-a38e544b9cb3",
+			"parent": "0910d977-99a6-4b9e-9ef0-6724dd3a7158",
+			"child": "69c3d642-2d77-4ae6-842b-eabd32f43318",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "6455ce3e-78ee-4b0e-9919-992aecde6e7c",
+					"parentcol": "b4e8fae1-afce-4ffe-b63b-16e793dde0d1",
+					"childcol": "248f69ee-303b-4074-87cc-f9502af37138"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"4d62baaa-c12f-4341-95d1-010c3dc372d6": {
+			"id": "4d62baaa-c12f-4341-95d1-010c3dc372d6",
+			"visible": true,
+			"name": "options_id_question_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "03bd8348-d2e3-426c-a052-e4bb93891666",
+			"parent": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+			"child": "ff3510a1-ac80-4092-bc25-71c9d4f55241",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "3b59dfb4-d29f-451a-9327-41b69f3805ab",
+					"parentcol": "47dfb026-d702-4859-a419-b71b316c212d",
+					"childcol": "ec0b289b-dd0f-4259-90f0-b0b71fb6dac9"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"afb211c9-2124-4c5f-9928-873b8ed81b2f": {
+			"id": "afb211c9-2124-4c5f-9928-873b8ed81b2f",
+			"visible": true,
+			"name": "exams_questions_id_exam_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d9e31dcf-d1f3-4ebd-9886-a06b4be1caba",
+			"parent": "69c3d642-2d77-4ae6-842b-eabd32f43318",
+			"child": "1b4ba878-48ad-4476-8872-f910acb0cd3d",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "7b830b8c-152c-4ec0-a68d-6133929521d0",
+					"parentcol": "9bced3b1-86f9-4846-a417-59442613e3ef",
+					"childcol": "187a84c4-989a-43f8-b7e0-d5b7e996f30b"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"73a9fdbf-4a6f-44e7-a849-94d8010e42c4": {
+			"id": "73a9fdbf-4a6f-44e7-a849-94d8010e42c4",
+			"visible": true,
+			"name": "exams_questions_id_quesion_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "03bd8348-d2e3-426c-a052-e4bb93891666",
+			"parent": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+			"child": "1b4ba878-48ad-4476-8872-f910acb0cd3d",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "daf0b356-f97e-4cd2-8024-d9896d200aac",
+					"parentcol": "47dfb026-d702-4859-a419-b71b316c212d",
+					"childcol": "05f17f7b-451f-44bc-a1fb-a9714b7d2197"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"04ed3299-de9b-4aa4-bb38-3221c8148645": {
+			"id": "04ed3299-de9b-4aa4-bb38-3221c8148645",
+			"visible": true,
+			"name": "question_categories_id_category_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "ab561f10-7240-4675-bd28-bfccee964fc1",
+			"parent": "d9df2c97-9e58-471d-a87d-89b059682ea7",
+			"child": "a54cfb03-07be-4bfb-8891-d75a5483ff7a",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "878f5b4d-6dee-4077-9b17-2e5ce1234906",
+					"parentcol": "84d2e224-98ef-4155-a668-25ef79711f65",
+					"childcol": "c23d89ff-1e1f-49a3-aa24-2e971657ab00"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"41194fd4-b04f-4e46-900e-86d9bf29b0e7": {
+			"id": "41194fd4-b04f-4e46-900e-86d9bf29b0e7",
+			"visible": true,
+			"name": "question_categories_id_question_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "03bd8348-d2e3-426c-a052-e4bb93891666",
+			"parent": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+			"child": "a54cfb03-07be-4bfb-8891-d75a5483ff7a",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "a0f02121-59d9-4d82-90c1-14cab800c390",
+					"parentcol": "47dfb026-d702-4859-a419-b71b316c212d",
+					"childcol": "8dc053d2-289b-47dc-b8a9-a95fae057d1b"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"9dc0df0d-c6c2-4046-a25e-fcaadfbd72c6": {
+			"id": "9dc0df0d-c6c2-4046-a25e-fcaadfbd72c6",
+			"visible": true,
+			"name": "user_answers_id_user_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "1696ce79-78dc-46ff-bf1e-a38e544b9cb3",
+			"parent": "0910d977-99a6-4b9e-9ef0-6724dd3a7158",
+			"child": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "21c5bdbe-b2a6-4e12-8894-759a10bab938",
+					"parentcol": "b4e8fae1-afce-4ffe-b63b-16e793dde0d1",
+					"childcol": "2c90bafd-6b90-4934-896f-d4705e68e88e"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"f390cc96-141a-4adc-8452-0a38f672b6a6": {
+			"id": "f390cc96-141a-4adc-8452-0a38f672b6a6",
+			"visible": true,
+			"name": "user_answers_id_exam_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "d9e31dcf-d1f3-4ebd-9886-a06b4be1caba",
+			"parent": "69c3d642-2d77-4ae6-842b-eabd32f43318",
+			"child": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "5fb30e72-d88c-47ee-81fe-f67a6bfe04da",
+					"parentcol": "9bced3b1-86f9-4846-a417-59442613e3ef",
+					"childcol": "e8f276cf-5c50-44a8-99cb-0aace75fcf81"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"0c230561-9d41-4007-8e8a-abd39d6dda44": {
+			"id": "0c230561-9d41-4007-8e8a-abd39d6dda44",
+			"visible": true,
+			"name": "user_answers_id_selectedoption_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "b73a9627-63c3-4c2f-b263-e8ef3938c628",
+			"parent": "ff3510a1-ac80-4092-bc25-71c9d4f55241",
+			"child": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "10679dc9-b56e-4771-a79d-a5c499770401",
+					"parentcol": "8f155644-fff7-4be1-8b60-97dce5957f7a",
+					"childcol": "02de1f80-d591-4474-9069-0eb03ccdc8cc"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"e2032f73-159c-4558-b5d5-655be4af9743": {
+			"id": "e2032f73-159c-4558-b5d5-655be4af9743",
+			"visible": true,
+			"name": "user_answers_id_question_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "03bd8348-d2e3-426c-a052-e4bb93891666",
+			"parent": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+			"child": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "482359dd-0ed7-422d-934c-f0197d788977",
+					"parentcol": "47dfb026-d702-4859-a419-b71b316c212d",
+					"childcol": "f1d01ec8-a44f-4b1f-8e13-5235335ca4b1"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "simulador_db",
+		"id": "8e3bd725-de6a-4f0b-92e1-1eede3206182",
+		"activeDiagram": "04b8fb5a-348a-4a78-b94e-59957905f3cf",
+		"desc": "",
+		"path": "",
+		"type": "PG",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"laststoredin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_coltopk": true,
+		"pg": {
+			"schema": ""
+		},
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"includeSchema": "always",
+			"quotation": "if_needed",
+			"includeGeneratedNames": "always"
+		},
+		"nameAutoGeneration": {
+			"keys": true,
+			"indexes": true,
+			"relations": true
+		},
+		"connectionVersion": "",
+		"lastSaved": 1729707301062
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"04b8fb5a-348a-4a78-b94e-59957905f3cf": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "04b8fb5a-348a-4a78-b94e-59957905f3cf",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"69c3d642-2d77-4ae6-842b-eabd32f43318": {
+					"referencedItemId": "69c3d642-2d77-4ae6-842b-eabd32f43318",
+					"x": 568,
+					"y": 398,
+					"gHeight": 81,
+					"gWidth": 212,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"0910d977-99a6-4b9e-9ef0-6724dd3a7158": {
+					"referencedItemId": "0910d977-99a6-4b9e-9ef0-6724dd3a7158",
+					"x": 245,
+					"y": 309,
+					"gHeight": 99,
+					"gWidth": 212,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"b9b7a821-7f30-49b5-8294-d1ce7e1dd730": {
+					"referencedItemId": "b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+					"x": 597,
+					"y": 693,
+					"gHeight": 81,
+					"gWidth": 221,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"ff3510a1-ac80-4092-bc25-71c9d4f55241": {
+					"referencedItemId": "ff3510a1-ac80-4092-bc25-71c9d4f55241",
+					"x": 248,
+					"y": 671,
+					"gHeight": 81,
+					"gWidth": 194,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"1b4ba878-48ad-4476-8872-f910acb0cd3d": {
+					"referencedItemId": "1b4ba878-48ad-4476-8872-f910acb0cd3d",
+					"x": 593,
+					"y": 531,
+					"gHeight": 81,
+					"gWidth": 230,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"d9df2c97-9e58-471d-a87d-89b059682ea7": {
+					"referencedItemId": "d9df2c97-9e58-471d-a87d-89b059682ea7",
+					"x": 600,
+					"y": 819,
+					"gHeight": 63,
+					"gWidth": 196,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"a54cfb03-07be-4bfb-8891-d75a5483ff7a": {
+					"referencedItemId": "a54cfb03-07be-4bfb-8891-d75a5483ff7a",
+					"x": 223,
+					"y": 786,
+					"gHeight": 81,
+					"gWidth": 257,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"d5cde2bd-f4fb-421a-be71-e254168d4666": {
+					"referencedItemId": "d5cde2bd-f4fb-421a-be71-e254168d4666",
+					"x": 241,
+					"y": 491,
+					"gHeight": 117,
+					"gWidth": 228,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showHorizontal": true,
+			"showDescriptions": true,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"showIndicatorCaptions": true,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"embeddedSpacing": "2",
+			"showMainIcon": true,
+			"showLabels": true,
+			"showCustomizations": false
+		}
+	},
+	"diagramsOrder": [],
+	"order": [
+		"d9df2c97-9e58-471d-a87d-89b059682ea7",
+		"69c3d642-2d77-4ae6-842b-eabd32f43318",
+		"1b4ba878-48ad-4476-8872-f910acb0cd3d",
+		"ff3510a1-ac80-4092-bc25-71c9d4f55241",
+		"a54cfb03-07be-4bfb-8891-d75a5483ff7a",
+		"b9b7a821-7f30-49b5-8294-d1ce7e1dd730",
+		"d5cde2bd-f4fb-421a-be71-e254168d4666",
+		"0910d977-99a6-4b9e-9ef0-6724dd3a7158",
+		"d187dec8-730f-4455-a181-4422639fda47",
+		"4d62baaa-c12f-4341-95d1-010c3dc372d6",
+		"afb211c9-2124-4c5f-9928-873b8ed81b2f",
+		"73a9fdbf-4a6f-44e7-a849-94d8010e42c4",
+		"04ed3299-de9b-4aa4-bb38-3221c8148645",
+		"41194fd4-b04f-4e46-900e-86d9bf29b0e7",
+		"9dc0df0d-c6c2-4046-a25e-fcaadfbd72c6",
+		"f390cc96-141a-4adc-8452-0a38f672b6a6",
+		"0c230561-9d41-4007-8e8a-abd39d6dda44",
+		"e2032f73-159c-4558-b5d5-655be4af9743"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}

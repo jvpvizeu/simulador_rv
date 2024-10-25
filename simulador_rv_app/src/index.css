@@ -1,0 +1,184 @@
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  #root{
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+  }
+  
+  li {
+    margin: 8px 0; /* Espaçamento entre itens */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : black;
+  }
+
+  button {
+    background-color: #5fbec4;
+    color: white;
+    padding: 10px 20px;
+    border: 3;
+    border-color: #343a40;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: #343a40;
+  }
+
+  .examlist-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilos personalizados para o layout */
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Estilos para o conteúdo principal da página */
+#main-content {
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: flex-start; /* Alinha ao topo */
+  height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* Estilo da question-navbar */
+#question-navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  background-color: #5fbec4;
+  border-radius: 50%;
+  border: 3px solid #343a40;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  background-color: #343a40;
+}
+
+.nav-item:hover {
+  background-color: #343a40;
+}
+
+.option {
+  display: flex; /* Alinha o input e o label lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  margin: 10px; /* Espaçamento entre as opções */
+  cursor: pointer; /* Mostra o cursor de ponteiro ao passar sobre a opção */
+}
+
+.radio-input {
+  margin-right: 10px; /* Espaço entre o botão de rádio e o texto da opção */
+}
+
+.radio-label {
+  font-size: 16px; /* Tamanho da fonte para o texto da opção */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilos adicionais para feedback visual */
+.option:hover .radio-input {
+  outline: 2px solid #5fbec4; /* Adiciona uma borda ao passar o mouse */
+}
+
+.selected-option {
+  background-color: #343a40; /* Cor para a opção selecionada */
+}
+.finish-simulated {
+  margin-top: 20px; /* Adiciona espaço acima do botão */
+  display: flex; /* Alinha o botão no centro */
+  justify-content: center; /* Centraliza o botão */
+}
+
+.finish-btn {
+  background-color: #5fbec4; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: 3; /* Remove a borda */
+  padding: 10px 20px; /* Espacamento interno */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+.finish-btn:hover {
+  background-color: #343a40; /* Cor ao passar o mouse */
+}
+
+.backbtn-div {
+  justify-content: center;
+}
+
+.back-button {
+  position: absolute; /* Posiciona o botão */
+  top: 10px; /* Distância do topo */
+  left: 10px; /* Distância da esquerda */
+  background-color: #5fbec4; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.back-button:hover {
+  background-color: #343a40; /* Cor ao passar o mouse */
+}
+
+@media (width <= 450px) {
+  .back-button {
+    position: fixed; /* Mantém o botão fixo na tela */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    display: flex; /* Certifique-se de que o botão use o flexbox */
+  }
+
+  .backbtn-div {
+    width: 100%;
+  }
+
+  #exam-name {
+    margin-top: 60px;
+    display: flex;
+  }
+
+  #question-navbar {
+    margin-top: 60px; /* Adiciona margem para evitar sobreposição com o botão */
+  }
+}
