@@ -152,7 +152,7 @@ body {
   border: none; /* Remove a borda */
   padding: 10px 20px; /* Espaçamento interno */
   font-size: 16px; /* Tamanho da fonte */
-  border-radius: 5px; /* Cantos arredondados */
+  border-radius: 3px; /* Cantos arredondados */
   cursor: pointer; /* Muda o cursor ao passar o mouse */
   z-index: 1000; /* Garante que fique acima de outros elementos */
 }

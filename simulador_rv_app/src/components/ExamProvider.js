@@ -7,8 +7,6 @@ const ExamContext = createContext();
 export const ExamProvider = ({ children }) => {
   const [examData, setExamData] = useState([]);
 
-  // Você pode adicionar funções aqui para manipular o estado dos exames, se necessário
-
   return (
     <ExamContext.Provider value={{ examData, setExamData }}>
       {children}
